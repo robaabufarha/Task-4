@@ -1,0 +1,218 @@
+:root {
+  --padding-left: 4.5rem;
+  --padding-right: 4.5rem;
+  font-size: 16px;
+  --bg-all: #ffffff;
+  --bg-dark-mode-button: #ffffff;
+  --dark-mode-icon: #111517;
+  --bg-select-reagion: #ffffff;
+  --bg-search-wrapper: #ffffff;
+  --bg-nav: #ffffff;
+  --search-icon-color: #858585;
+  --bs-body-color: #000000;
+  --bg-card: #ffffff;
+  --bg-back-button: #ffffff;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.dark-mode {
+  --bg-nav: #2b3945;
+  --bg-card: #2b3945;
+  --bg-select-reagion: #2b3945;
+  --bg-search-wrapper: #2b3945;
+  --bg-dark-mode-button: #2b3945;
+  --bs-body-color: #ffffff;
+  --bg-all: #202c37;
+  --search-icon-color: #ffffff;
+  --bg-back-button: #2b3945;
+}
+body {
+  font-family: "Nunito Sans", sans-serif;
+  color: var(--bs-body-color);
+  background-color: var(--bg-all);
+}
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.navbar {
+  background-color: var(--bg-nav);
+  height: 4.4rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  padding-left: var(--padding-left);
+  padding-right: var(--padding-right);
+}
+h1 {
+  font-size: 27px;
+  font-weight: 800;
+  margin-bottom: 0rem;
+  color: var(--bs-body-color);
+}
+.dark-mode-button {
+  width: 6.5rem;
+  height: 3rem;
+  background-color: var(--bg-dark-mode-button);
+  border: none;
+  box-shadow: #ffffff;
+  font-weight: 600;
+  font-size: medium;
+  align-items: end;
+  place-items: center;
+  display: flex;
+  color: var(--bs-body-color);
+}
+.container-fluid {
+  --bs-gutter-x: 0;
+}
+a {
+  text-decoration: none;
+}
+.back-button {
+  width: 140px;
+  height: 36px;
+  background-color: var(--bg-back-button);
+  box-shadow: 0 1px 7px rgba(0, 0, 0, 0.2);
+  border: none;
+  border-radius: 3px;
+  text-decoration: none;
+  margin-top: 4rem;
+  margin-left: var(--padding-left);
+  margin-bottom: 4rem;
+  place-items: center;
+  display: flex;
+  align-items: center;
+  color: var(--bs-body-color);
+}
+
+.back-button-text {
+  margin-left: 0.4rem;
+}
+.back-button ion-icon {
+  padding-left: 38px;
+}
+.main-container > div {
+  background-color: var(--bg-all);
+}
+.py-5 {
+  --bs-gutter-y: 4rem;
+  padding-bottom: 3rem !important;
+  padding-top: 0rem !important;
+}
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  grid-template-rows: 320px;
+  grid-gap: 7rem;
+  gap: 7rem;
+  padding-left: var(--padding-left);
+  padding-right: var(--padding-right);
+}
+.details-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 150px;
+  grid-gap: 10rem;
+  gap: 10rem;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+h2 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-weight: 800;
+}
+.details-info {
+  display: inline-block;
+  font-weight: 600;
+}
+.button-sty {
+  width: 100px;
+  height: 35px;
+  background-color: var(--bg-back-button);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  border: none;
+  border-radius: 3px;
+  place-items: center;
+  align-items: center;
+  color: var(--bs-body-color);
+  margin-right: 0.5rem;
+  display: inline-block;
+}
+.border-countries {
+  display: inline;
+}
+
+.border-countries-div {
+  display: inline-block;
+  font-weight: 600;
+  margin-right: 1.3rem;
+}
+span {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+@media only screen and (max-width: 767px) {
+  .navbar {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  h1 {
+    font-size: 1rem;
+  }
+  .dark-mode-button {
+    width: 6rem;
+    height: 3rem;
+    font-size: 13px;
+  }
+  .back-button {
+    width: 6.2rem;
+    margin-left: 2.2rem;
+    margin-top: 2.5rem;
+  }
+  .back-button ion-icon {
+    padding-left: 17px;
+  }
+  h2 {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  .left-side {
+    padding-bottom: 0.5rem;
+  }
+
+  .main-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 320px 320px;
+    grid-gap: 25px;
+    gap: 25px;
+    padding-left: 2.2rem;
+    padding-right: 2.2rem;
+  }
+  .details-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 140px;
+    grid-gap: 3.5rem;
+    gap: 3.5rem;
+    margin-bottom: 2rem;
+  }
+  .border-countries-div {
+    display: block;
+    margin-bottom: 1.3rem;
+  }
+
+  .details-info {
+    margin-top: 0.7rem;
+  }
+  .button-sty {
+    width: 5.5rem;
+    font-size: 0.9rem;
+  }
+}
